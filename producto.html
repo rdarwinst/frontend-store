@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;700&family=Staatliches&display=swap"
+        rel="stylesheet">
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Frontend Store</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="index.html">
+            <img class="header__logo" src="img/logo.png" alt="Logo Frontend Store">
+        </a>
+    </header>
+
+    <nav class="navegacion">
+        <a class="navegacion__enlace" href="index.html">Tienda</a>
+        <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
+    </nav>
+
+    <main class="contenedor">
+        <h1>Vue JS</h1>
+        <div class="camiseta">
+            <img src="img/1.jpg" alt="Imagen del producto camiseta Vue JS" class="camiseta__imagen">
+            <div class="camiseta__contenido">
+                <p>Maecenas luctus tincidunt ante vel bibendum. Pellentesque pretium ex sit amet turpis tristique, et
+                    ullamcorper velit scelerisque. Sed faucibus, ligula eget vestibulum lacinia, metus enim semper
+                    felis, a semper metus libero eu ex.</p>
+                <form class="formulario">
+                    <select class="formulario__campo" name="talla" id="talla">
+                        <option value="none" selected disabled>-- Elegir Talla --</option>
+                        <option value="xs">XS</option>
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                        <option value="xl">XL</option>
+                    </select>
+                    <input class="formulario__campo" type="number" name="cantidad" id="cantidad" placeholder="Cantidad"
+                        min="1">
+                    <input class="formulario__submit" type="submit" value="Agregar al Carrito">
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <p class="footer__texto">
+            Frontend Store - Todos los derechos reservados. &copy;
+        </p>
+    </footer>
+
+</body>
+
+</html>
